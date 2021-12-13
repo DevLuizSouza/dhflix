@@ -1,12 +1,387 @@
-*{
-    border:0;
-    outline: 0;
-    padding: 0;
-    margin: 0;
-    vertical-align: baseline;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*Css do header e main: Fernando*/
+
+body{
+    background-color: #fefefe;
+}
+
+.row{
+    margin: auto;
+}
+
+.navbar-custom{
+    height: 80px;
+    padding-right: 24px;
+    padding-left: 20px;
+}
+
+.navbar-nav > .active > a {
+    color: #E51B3E;
+}
+
+.slider-home{
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/slider-home.png);
+    background-attachment: fixed;
+}
+
+.inside-slider{
+    max-width: fit-content;
+    height: auto;
+    margin: 20px auto;
+    padding: 30px;
+}
+
+.titulo-principal {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 4.5rem;
+    line-height: 6rem;
+    color: #E51B3E;
+    text-align: left;
+}
+
+.slide-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.botao-explorar {
+    padding: 12px 80px 12px; 
+    background: transparent;
+    border: 2px solid #33BB69;
     box-sizing: border-box;
-    font-weight: inherit;
-    font-family: inherit;
-    font-style: inherit;
-    font-size: 100%;
+    border-radius: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    line-height: 28px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    transition: .1s ease-in-out;
+    margin: 20px auto;
+}
+
+.botao-explorar:hover {
+    
+    background: #33BB69;
+    border: 2px solid #33BB69;
+    color: #FFFFFF;
+}
+    
+.botao-explorar:active {
+    background: #33BB69;
+    border: 2px solid #33BB69;
+    transform: scale(1.05);
+    color: #FFFFFF;
+}
+
+.botao-explorar:focus {
+    outline: none;
+    border: 2px solid #33BB69;
+    box-shadow: none;
+    background: #33BB69;
+    color: #FFFFFF;
+}
+    
+.btn:focus,.btn:active:focus,.btn.active:focus, .btn-close:focus, .btn-close:active
+.btn.focus,.btn:active.focus,.btn.active.focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.movies-list{
+    max-width: 960px;
+    margin-top: 40px;
+}
+
+#filmes-recentes{
+    padding-top: 40px;
+}
+
+.titulo-filmes, h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 2.3rem;
+    line-height: 1.8rem;
+    margin-top: 20px;
+}
+
+.col, .col-lg-4, .col-md-6, .col-sm-12{
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    margin-top: 35px;
+}
+
+.card-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+
+.card-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: .8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: -webkit-left;
+    z-index: -1000;
+    text-align:-webkit left;
+    
+}
+
+
+.card img{
+    height: 190px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    position: relative;
+    bottom: -12px;
+    margin-top: -12px;
+}
+
+.card-body{
+    position: relative;
+    border-radius: 12px;
+    background: #F4F4F4;
+    padding: 20px;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    border: 0;
+    transition: .3s;
+    border-radius: 12px;
+    height: fit-content;
+
+}
+
+.card:hover {
+    box-shadow: 0px 1px 10px 2px rgba(0,0,0,0.15);
+    border: 0;
+    transform: scale(1.02);
+}
+
+.botao-filme {
+    background: #33BB69;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: auto 30px;
+    transition: 0.5s;
+    padding-left: 25px;
+}
+
+.botao-filme::after{
+    content: ' ►';
+    opacity: 0;  
+    transition: 0.5s;
+    color: white;
+}
+
+.botao-filme:hover {
+    padding-right: 5px;
+    padding-left:5px;
+    color: white;  
+    background: #40d47c;
+
+}
+
+.botao-filme:hover::after {
+    opacity: 1;
+    right: 10px;
+    background: #40d47c;
+}
+
+.navbar-collapse {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+  .modal-body img{
+    width: 20rem; 
+    margin-bottom: 20px;
+}
+
+.modal-body form{
+    padding: 0px 20px 20px 20px;
+}
+
+.btn-close {
+    width: 1rem;
+    height: 1rem;
+}
+
+.modal-header {
+    border: none;
+    padding-right: 2rem;
+    padding-top: 2rem;
+}
+
+.botao-entrar {
+    background: #33BB69;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: auto 10px;
+    transition: 0.5s;
+    padding: 10px;
+    border: none;
+    margin: 15px auto;
+    width: 100%;
+    height: calc(3.5rem);
+    font-family: 'Roboto', sans-serif;
+}
+
+.botao-entrar:hover{
+    background: #40d47c;
+}
+
+.botao-entrar:focus,.botao-entrar:active:focus,.botao-entrar.active:focus,
+.botao-entrar.focus,.btbotao-entrar:active.focus,.botao-entrar.active.focus {
+    outline: none;
+    box-shadow: none;
+    background-color: #33BB69;
+}
+
+.botao-explorar:active {
+    background: #33BB69;
+    border: 2px solid #33BB69;
+    transform: scale(1.05);
+    color: #FFFFFF;
+}
+
+.form-control:focus, .form-floating:focus{
+    border: 2px solid #33BB69;
+    box-shadow: none;
+}
+
+.navbar-light .nav-item.active .nav-link,
+.navbar-light .nav-item .nav-link:active,
+.navbar-light .nav-item .nav-link:focus,
+.navbar-light .nav-item:hover .nav-link {
+    color: #E51B3E;
+}
+
+.navbar-expand-lg .navbar-nav {
+    margin-right: 20px;
+    gap: 24px;
+}
+.navbar-light .nav-item.active .nav-link{
+    display: table;
+    border-bottom: 2px solid #E51B3E;
+}
+
+.video-about-us {
+    max-width: 960px;
+    margin:30px auto;
+}
+.margin-video{
+    margin-left: auto;
+}
+
+#sobre-nos-clear{
+    margin-top: 50px;
+    height: 30px;
+}
+
+.video-inst{
+    margin: 50px;
+}
+
+/*Footer - Códigos da Danielle*/
+
+
+footer{
+
+    background-color: #171717;
+    width: 100%;
+    height: fit-content;
+    border-top: 24px;
+    
+}    
+.principal-rodape{
+    
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    bottom: 0;
+    margin-top: 70px;
+}
+
+@media(max-width:650px){
+.principal-rodape{
+
+    background-color: #171717;
+    width: 100%;
+    height: fit-content;
+    border-top: 24px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    bottom: 0;
+    }
+}
+
+.informacoes{
+    
+    width: 250px;
+    height: fit-content;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #f4f3fa;
+    text-align: center;
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nome-rodape{
+
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.p-rodape{
+
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+    padding-bottom: 20px;
 }

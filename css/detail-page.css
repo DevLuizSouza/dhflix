@@ -35,15 +35,18 @@
 }
 
 .container .detail-rating .detail-title {
-  width: 500px;
+  width: 1196px;
   height: 75px;
+ 
 }
 
 .container .detail-rating .detail-title h1 {
   font-size: 64px;
+
 }
 
 .container .detail-rating .rating {
+  width: 1196px;
   width: 26, 67px;
   height: 25, 33px;
 }
@@ -83,4 +86,3 @@
   margin: 10px auto;
   border-radius: 20px;
 }
-/*# sourceMappingURL=detail-page.css.map */

@@ -23,7 +23,7 @@
 
 
 .container {
-    margin-top: 50px;
+    margin-top: 150px;
     display: flex;
     display: block;
     width: 1196px;
@@ -32,16 +32,21 @@
     .detail-rating {
         display: flex;
         flex-direction: column;
+        
 
 
 
 
         .detail-title {
-
+            display: flex;
             width: 500px;
             height: 75px;
+            padding-left: 40;
+            background-color: aquamarine;
 
             h1 {
+                
+                background-color: black;
 
                 font-size: 64px;
 
@@ -49,13 +54,16 @@
         }
 
         .rating {
+            flex: 1;
             width: 26, 67px;
+            background-color: black;
             height: 25, 33px;
         }
     }
 
 
     .sinopse h3 {
+        background-color: aquamarine;
         flex: 1;
         padding-top: 40px;
         flex-direction: column;
