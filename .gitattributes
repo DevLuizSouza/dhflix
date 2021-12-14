@@ -1,0 +1,18 @@
+*.html linguist-detectable=true
+*.html linguist-language=html
+*.html text
+
+
+*.css linguist-detectable=true
+*.css linguist-language=css
+*.css text
+
+*.js linguist-detectable=true
+*.js linguist-language=javascript
+*.js text
+
+*.scss linguist-detectable=true
+*.scss linguist-language=scss
+*.scss text
+
+
